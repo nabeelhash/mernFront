@@ -37,7 +37,7 @@ const AdminPage = () => {
         <div>
             <h1>{user.name}</h1>
             <h3>{user.email}</h3>
-            <img src={`http://localhost:4000/${user.profileImage}`} style={{width: '200px'}}></img>
+            <img src={`https://mern-back-three.vercel.app/${user.profileImage}`} style={{width: '200px'}}></img>
         </div>
       ))}
     </div>
