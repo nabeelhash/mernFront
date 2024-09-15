@@ -30,7 +30,7 @@ const Profile = () => {
         const fetchData = async function () {
             try {
                 console.log('click')
-                let response = await fetch('http://localhost:4000/current', {
+                let response = await fetch('https://mern-back-nu.vercel.app/current', {
                     method: 'GET',
                     headers: { "Content-Type": "application/json" },
                     credentials: 'include'
@@ -59,7 +59,7 @@ const Profile = () => {
             const formData = new FormData();
             formData.append('pic', file)
             // Upload the image to the server
-            let response = await fetch('http://localhost:4000/updateAvatar', {
+            let response = await fetch('https://mern-back-nu.vercel.app/updateAvatar', {
                 method: 'PATCH',
                 body: formData,
                 credentials: 'include',

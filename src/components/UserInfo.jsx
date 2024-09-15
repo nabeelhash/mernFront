@@ -10,7 +10,7 @@ const UserInfo = () => {
     useEffect(function () {
         const fetchData = async function () {
             try {
-                const response = await fetch('http://localhost:4000/allUsers', {
+                const response = await fetch('https://mern-back-nu.vercel.app/allUsers', {
                     method: 'GET',
                     credentials: 'include'
                 })
@@ -36,7 +36,7 @@ const UserInfo = () => {
             return
         }
         try {
-            let response = await fetch(`http://localhost:4000/deleteUser/${id}`, {
+            let response = await fetch(`https://mern-back-nu.vercel.app/deleteUser/${id}`, {
                 method: 'delete',
                 headers: { "Content-Type": "application/json" },
                 credentials: 'include',

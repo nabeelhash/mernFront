@@ -19,7 +19,7 @@ const Home = () => {
     useEffect(function () {
         const fetchData = async function () {
             try {
-                const response = await fetch('http://localhost:4000/allProducts', {
+                const response = await fetch('https://mern-back-nu.vercel.app/allProducts', {
                     method: 'GET',
                     credentials: 'include',
                     headers: { 'Content-Type': 'application/json' }
@@ -50,7 +50,7 @@ const Home = () => {
         const fetchData = async function () {
             try {
                 console.log('click')
-                let response = await fetch('http://localhost:4000/categoryAll', {
+                let response = await fetch('https://mern-back-nu.vercel.app/categoryAll', {
                     method: 'GET',
                     headers: { "Content-Type": "application/json" },
                     credentials: 'include'

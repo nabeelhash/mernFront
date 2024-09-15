@@ -10,7 +10,7 @@ const AdminPage = () => {
         const fetchData = async function () {
             try {
                 console.log('hello')
-                let response = await fetch('http://localhost:4000/admin', {
+                let response = await fetch('https://mern-back-nu.vercel.app/admin', {
                     method: 'GET',
                     headers: { "Content-Type": "application/json" },
                     credentials: 'include'

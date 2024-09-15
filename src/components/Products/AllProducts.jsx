@@ -18,7 +18,7 @@ const AllBlogs = () => {
     useEffect(function () {
         const fetchData = async function () {
             try {
-                const response = await fetch('http://localhost:4000/allProducts', {
+                const response = await fetch('https://mern-back-nu.vercel.app/allProducts', {
                     method: 'GET',
                     credentials: 'include',
                     headers: { 'Content-Type': 'application/json' }
@@ -48,7 +48,7 @@ const AllBlogs = () => {
         }
         console.log(id)
         try {
-            const response = await fetch(`http://localhost:4000/delete/${id}`, {
+            const response = await fetch(`https://mern-back-nu.vercel.app/delete/${id}`, {
                 method: 'DELETE',
                 credentials: 'include'
             })

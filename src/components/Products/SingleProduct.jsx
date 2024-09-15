@@ -19,7 +19,7 @@ const SingleBlog = () => {
     useEffect(function () {
         const fetchData = async function () {
             try {
-                const response = await fetch(`http://localhost:4000/single/${id}`, {
+                const response = await fetch(`https://mern-back-nu.vercel.app/single/${id}`, {
                     method: 'GET',
                     credentials: 'include'
                 })
