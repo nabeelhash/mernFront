@@ -20,7 +20,7 @@ const CreateProduct = () => {
         const fetchData = async function () {
             try {
                 console.log('click')
-                let response = await fetch('https://mern-back-nu.vercel.app/categoryALl', {
+                let response = await fetch('https://mern-back-three.vercel.app/categoryALl', {
                     method: 'GET',
                     headers: { "Content-Type": "application/json" },
                     credentials: 'include'
@@ -52,7 +52,7 @@ const CreateProduct = () => {
 
         try {
             console.log('click')
-            let response = await fetch('https://mern-back-nu.vercel.app/createProduct', {
+            let response = await fetch('https://mern-back-three.vercel.app/createProduct', {
                 method: 'POST',
                 credentials: 'include',
                 body: formData

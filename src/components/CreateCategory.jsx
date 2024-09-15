@@ -15,7 +15,7 @@ const CreateCategory = () => {
         const fetchData = async function () {
             try {
                 console.log('click')
-                let response = await fetch('https://mern-back-nu.vercel.app/categoryAll', {
+                let response = await fetch('https://mern-back-three.vercel.app/categoryAll', {
                     method: 'GET',
                     headers: { "Content-Type": "application/json" },
                     credentials: 'include'
@@ -39,7 +39,7 @@ const CreateCategory = () => {
         e.preventDefault()
         try {
             console.log('click')
-            let response = await fetch('https://mern-back-nu.vercel.app/category', {
+            let response = await fetch('https://mern-back-three.vercel.app/category', {
                 method: 'POST',
                 headers: { "Content-Type": "application/json" },
                 credentials: 'include',
@@ -61,7 +61,7 @@ const CreateCategory = () => {
     const updateCategory = async function () {
         try {
             console.log(updateId)
-            let response = await fetch(`https://mern-back-nu.vercel.app/updateCategory/${updateId}`, {
+            let response = await fetch(`https://mern-back-three.vercel.app/updateCategory/${updateId}`, {
                 method: 'PATCH',
                 headers: { "Content-Type": "application/json" },
                 credentials: 'include',
@@ -88,7 +88,7 @@ const CreateCategory = () => {
     const handleDelete =async function(id){
         try {
             console.log(updateId)
-            let response = await fetch(`https://mern-back-nu.vercel.app/deleteCategory/${id}`, {
+            let response = await fetch(`https://mern-back-three.vercel.app/deleteCategory/${id}`, {
                 method: 'delete',
                 headers: { "Content-Type": "application/json" },
                 credentials: 'include',

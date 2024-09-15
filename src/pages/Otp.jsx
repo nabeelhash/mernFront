@@ -14,7 +14,7 @@ const Otp = () => {
     console.log('click')
     try {
       e.preventDefault();
-      const response = await fetch('https://mern-back-nu.vercel.app/submit-otp', {
+      const response = await fetch('https://mern-back-three.vercel.app/submit-otp', {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ otp, updatePassword }),

@@ -19,7 +19,7 @@ const Navbar = () => {
         console.log('click')
         try{
           e.preventDefault();
-          const response = await fetch('https://mern-back-nu.vercel.app/logout',{
+          const response = await fetch('https://mern-back-three.vercel.app/logout',{
             method: "GET",
             headers: {"Content-Type": "application/json"},
             credentials: 'include'

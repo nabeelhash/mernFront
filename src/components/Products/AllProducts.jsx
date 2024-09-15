@@ -18,7 +18,7 @@ const AllBlogs = () => {
     useEffect(function () {
         const fetchData = async function () {
             try {
-                const response = await fetch('https://mern-back-nu.vercel.app/allProducts', {
+                const response = await fetch('https://mern-back-three.vercel.app/allProducts', {
                     method: 'GET',
                     credentials: 'include',
                     headers: { 'Content-Type': 'application/json' }
@@ -48,7 +48,7 @@ const AllBlogs = () => {
         }
         console.log(id)
         try {
-            const response = await fetch(`https://mern-back-nu.vercel.app/delete/${id}`, {
+            const response = await fetch(`https://mern-back-three.vercel.app/delete/${id}`, {
                 method: 'DELETE',
                 credentials: 'include'
             })
@@ -87,7 +87,7 @@ const AllBlogs = () => {
                 <div class="card w-[80%] flex flex-row flex-wrap justify-around items-center py-20" >
                     {products.map(product => (
                         <div key={product._id} className='w-[40%] md:w-[28%] mb-5 border-4 border-gray-200'>
-                            <img className='w-[100%]' src={`http://localhost:4000/${product.image}`} />
+                            <img className='w-[100%]' src={`https://mern-back-three.vercel.app/${product.image}`} />
                             <div class="card-body">
                                 <h5 class="text-2xl font-bold ">{product.name}</h5>
                                 <p class="text-lg font-medium ">{product.des}</p>
