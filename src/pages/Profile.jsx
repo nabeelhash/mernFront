@@ -59,7 +59,7 @@ const Profile = () => {
             const formData = new FormData();
             formData.append('pic', file)
             // Upload the image to the server
-            let response = await fetch('https://mern-back-nu.vercel.app/updateAvatar', {
+            let response = await fetch('http://localhost:4000/updateAvatar', {
                 method: 'PATCH',
                 body: formData,
                 credentials: 'include',
